@@ -1,0 +1,143 @@
+{% extends 'main.html' %} {% block content %} {% if message %}
+<div class="alert alert-danger">{{ message }}</div>
+{% endif %}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        height: 100%;
+        background-image: white;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: rgb(69, 69, 69);
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+    }
+    /* Define the default background color for headings */
+    /* Change the background color of headings when hovered over */
+</style>
+<div class="container">
+    <div class="card card-body" style="border: none; ;background-color:#bad7d4;border-radius:10px;">
+        <h1> MACHINE LEARNING-BASED HUMAN DISEASES IDENTIFICATION SYSTEM
+        </h1>
+        <br>
+        <h2>Model Accuracies:</h2>
+        <ul>
+            <li>Diabetes Model: <strong>92.54%</strong></li>
+            <li>Heart Disease Model: <strong>98.70%</strong></li>
+            <li>Kidney Disease Model: <strong>99.16%</strong></li>
+            <li>Liver Disease Model: <strong>71.18%</strong></li>
+            <li>Malaria Model: <strong>95.65%</strong></li>
+
+        </ul>
+        <br>
+        <h3>Information about the Diseases:</h3>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px rgb(193, 191, 191); margin: 5px;background-color: #CADAD8; ">
+                <h4>Diabetes</h4>
+                <p>Diabetes mellitus refers to a group of diseases that affect how your body uses blood sugar (glucose). Glucose is vital to your health because it's an important source of energy for the cells that make up your muscles and tissues. It's
+                    also your brain's main source of fuel. The underlying cause of diabetes varies by type. But, no matter what type of diabetes you have, it can lead to excess sugar in your blood. Too much sugar in your blood can lead to serious health
+                    problems.
+                </p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Increased thirst</li>
+                    <li>Frequent urination</li>
+                    <li>Extreme hunger</li>
+                    <li>Unexplained weight loss</li>
+                    <li>Blurred vision</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px rgb(193, 191, 191);; margin: 5px;background-color: #CADAD8;">
+                <h4>Heart/ Cardiovascular Disease</h4>
+                <p>Cardiovascular disease (heart disease) refers to a group of diseases that affect the heart and blood vessels of your body. These diseases can affect one or many parts of your heart and /or blood vessels. A person may be symptomatic (physically
+                    experience the disease) or be asymptomatic (not feel anything at all).</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Pounding or racing heart (palpitations)</li>
+                    <li>Chest pain</li>
+                    <li>Sweating</li>
+                    <li>Lightheadedness</li>
+                    <li>Shortness of breath</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
+
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px  rgb(193, 191, 191);; margin: 5px;background-color: #CADAD8; ">
+                <h4>Chronic Kidney Disease</h4>
+                <p>Chronic kidney disease (CKD) means your kidneys are damaged and can’t filter blood the way they should. The disease is called “chronic” because the damage to your kidneys happens slowly over a long period of time. This damage can cause
+                    wastes to build up in your body. CKD can also cause other health problems.</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Nausea</li>
+                    <li>Vomiting</li>
+                    <li>Fatigue and weakness</li>
+                    <li>Muscle twitches and cramps</li>
+                    <li>Loss of appetite</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px rgb(193, 191, 191);; margin: 5px;background-color: #CADAD8;">
+                <h4>Liver Disease</h4>
+                <p>The term “liver disease” refers to any of several conditions that can affect and damage your liver. Over time, liver disease can cause cirrhosis (scarring). As more scar tissue replaces healthy liver tissue, the liver can no longer function
+                    properly. Left untreated, liver disease can lead to liver failure and liver cancer.</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Abdominal (belly) pain (especially on the right side)</li>
+                    <li>Bruising easily</li>
+                    <li>Changes in the color of your urine or stool</li>
+                    <li>Fatigue</li>
+                    <li>Nausea or vomiting</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px  rgb(193, 191, 191);; margin: 5px; background-color: #CADAD8;">
+                <h4>Malaria</h4>
+                <p>Malaria is a serious disease that spreads when you’re bitten by a mosquito infected by tiny parasites. When it bites, the mosquito injects malaria parasites into your bloodstream. Malaria is caused by the parasites, not by a virus or by
+                    a type of bacterium. If it isn’t treated, malaria can cause severe health problems such as seizures, brain damage, trouble breathing, organ failure and death.</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Fever and sweating</li>
+                    <li>Chills that shake your whole body</li>
+                    <li>Headache and muscle aches</li>
+                    <li>Fatigue</li>
+                    <li>Diarrhea, nausea and vomiting</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
+    </div>
+</div>
+{% endblock %}
